@@ -814,6 +814,9 @@ public function asd($id)
 	}
 }
 
+public function tae(){
+	tae tata
+}
 
 
 //ลบกลุ่มวิชา

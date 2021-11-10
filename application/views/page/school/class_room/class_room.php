@@ -32,12 +32,11 @@
                                 <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
                                 <div class="heading-elements">
                                     <ul class="list-inline mb-0">
-                                    <li><a href="<?php echo base_url('school/add_room'); ?>" class="btn btn-success" ><i class="fas fa-plus-square mr-2"></i> เพิ่มข้อมูลห้องเรียน</a></li>
+                                        <li><a href="<?php echo base_url('school/add_room'); ?>" class="btn btn-success"><i class="fas fa-plus-square mr-2"></i> เพิ่มข้อมูลห้องเรียน</a></li>
                                         <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
                                         <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
                                         <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
-                                        <!--                                             <li><a data-action="close"><i class="ft-x"></i></a></li>
- -->
+                                        <!-- <li><a data-action="close"><i class="ft-x"></i></a></li> -->
                                     </ul>
                                 </div>
                             </div>
@@ -70,7 +69,7 @@
                                                         <tr class="text-center">
                                                             <td><?php echo ++$i; ?></td>
                                                             <td><?php echo $row->degree_name; ?></td>
-                                                             <td><?php echo $row->degree_tag." ".$row->class. "/" .$row->class_room; ?></td>
+                                                            <td><?php echo $row->degree_tag . " " . $row->class . "/" . $row->class_room; ?></td>
                                                             <td>
 
                                                                 <a role="button" href="<?php echo base_url('school/update_room_class/' . $row->rid); ?>" class="btn btn-warning text-white">

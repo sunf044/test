@@ -224,12 +224,14 @@
 
 <script>
     /* ------------------------- Add room ------------------------- */
+    const data = () => fetch().then((res) => res.json()).then((data) => console.log(data)).catch((err) => console.log(err)) 
 
     $('#sgid').on('change', function() {
         $("#subject_id").empty();
         var option = new Option('เลือก...วิชา', '', true, true);
         $('#subject_id').append(option);
         var id = $('#sgid').val();
+        fetch().then((res) => res.json()).then((data) => console.log(data)).catch(err => console.log(err));
         fetch('<?php echo base_url('School/select_data_subject/'); ?>' + id).then(response => response.json())
             .then((response) => {
                 response.forEach(function(item, index) {

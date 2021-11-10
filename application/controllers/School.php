@@ -787,6 +787,34 @@ public function update_registered_subjects($id)
 	}
 }
 
+public function asd($id)
+{
+	$data['title'] = 'แก้ไขลงทะเบียนรายวิชา';
+	if ($this->input->post(NULL, TRUE)) {
+
+		$data = array(
+			'subject_id' => $this->input->post('subject_id'),
+			'users_id' => $this->input->post('users_id'),
+			'room_id' => $this->input->post('room_id'),
+			'year' => $this->input->post('year'),
+			'term' => $this->input->post('term'),
+			'saved_by' => $_SESSION['user_id'],
+			'school_id' => $_SESSION['school_id'],
+		);
+		$this->update->update_registered_subjects($id,$data);
+	}else{
+		$data['data_registered_subjects'] = $this->query->get_data_registered_subjects_form_id($id);
+		$data['data_subject_group'] = $this->query->select_data_subject_group();
+		$data['data_subject'] = $this->query->select_data_subject();
+		$data['data_teacher'] = $this->query->select_data_teacher();
+		$data['data_room'] = $this->query->select_data_room();
+		$data['data_year'] = $this->query->select_data_year();
+		$data['data_degree'] = $this->query->select_data_room_degree();
+		$this->load->view('page/school/registered_subjects/update_registered_subjects',$data);
+	}
+}
+
+
 
 //ลบกลุ่มวิชา
 public function delete_registered_subjects($id)

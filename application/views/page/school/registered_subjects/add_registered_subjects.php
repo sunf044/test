@@ -11,15 +11,15 @@ function tae2{
 }
 
 function tae{
-    asds
+    asds tae
 }
 
 function tae{
-    asds
+    asds tae
 }
 
 function tae{
-    asds
+    asds tae
 }
 
 function tae{

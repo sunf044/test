@@ -818,6 +818,12 @@ public function tae(){
 	tae tata
 }
 
+public function asasasassaasasas($id)
+{
+		$data['data_degree'] = $this->query->select_data_room_degree();
+		$this->load->view('page/school/registered_subjects/update_registered_subjects',$data);
+}
+
 
 //ลบกลุ่มวิชา
 public function delete_registered_subjects($id)

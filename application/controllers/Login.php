@@ -33,6 +33,7 @@ class Login extends CI_Controller
 	{
 		tae555
 	}
+	
 	public function tae()
 	{
 		parent::tae();

@@ -224,7 +224,6 @@
 
 <script>
     /* ------------------------- Add room ------------------------- */
-    const data = () => fetch().then((res) => res.json()).then((data) => console.log(data)).catch((err) => console.log(err)) 
 
     $('#sgid').on('change', function() {
         $("#subject_id").empty();

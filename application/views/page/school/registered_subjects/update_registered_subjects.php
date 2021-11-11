@@ -225,6 +225,11 @@
 <script>
     /* ------------------------- Add room ------------------------- */
 
+
+
+    tae 1
+    tae 2
+    
     $('#sgid').on('change', function() {
         $("#subject_id").empty();
         var option = new Option('เลือก...วิชา', '', true, true);

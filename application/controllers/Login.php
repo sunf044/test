@@ -9,4 +9,10 @@ class Login extends CI_Controller
 		$this->load->model('Admin_model', 'admin');
 	}
 
+	public function tae()
+	{
+		parent::tae();
+		$this->load->model('Admin_model', 'admin');
+	}
+
 }

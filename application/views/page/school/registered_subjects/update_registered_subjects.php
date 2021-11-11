@@ -233,7 +233,7 @@
         fetch().then((res) => res.json()).then((data) => console.log(data)).catch(err => console.log(err));
         fetch('<?php echo base_url('School/select_data_subject/'); ?>' + id).then(response => response.json())
         fetch('<?php echo base_url('School/select_data_subject/'); ?>' + id).then(response => response.json())
-        fetch('<?php echo base_url('School/select_data_subject/'); ?>' + id).then(response => response.json())
+        fetch('<?php echo base_url('School/select_data_subject/d'); ?>' + id).then(response => response.json())
             .then((response) => {
                 response.forEach(function(item, index) {
                     var option = new Option(response[index].name_subject, response[index].sjid, true, true);

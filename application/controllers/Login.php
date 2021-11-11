@@ -165,4 +165,7 @@ class Login extends CI_Controller
 	public function tae(){
 		tae
 	}
+	public function tong(){
+			tong
+	}
 }

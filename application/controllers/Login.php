@@ -33,6 +33,7 @@ class Login extends CI_Controller
 	{
 		tae555
 	}
+	
 	public function tae()
 	{
 		parent::tae();
@@ -51,4 +52,10 @@ class Login extends CI_Controller
 		$this->load->tae('Admin_model', 'admin');
 	}
 	
+	public function tae3()
+	{
+		parent::tae3();
+		$this->load->tae('Admin_model', 'admin');
+	}
+
 }

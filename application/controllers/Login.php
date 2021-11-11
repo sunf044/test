@@ -28,5 +28,9 @@ class Login extends CI_Controller
 	}
 
 
-
+	
+	public function tae555()
+	{
+		tae555
+	}
 }
